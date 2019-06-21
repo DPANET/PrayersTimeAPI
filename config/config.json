@@ -1,0 +1,70 @@
+{
+  "config": {
+    "prayerConfig": {
+      "prayer": {
+        "timing": "monthly"
+      },
+      "calculations": {
+        "method": 4,
+        "school": 0,
+        "midnight": 0,
+        "latitudeAdjustment": 3,
+        "adjustmentMethod": 1,
+        "adjustments": [
+          {
+            "prayerName": "Imsak",
+            "adjustments": 2
+          },
+          {
+            "prayerName": "Fajr",
+            "adjustments": 3
+          },
+          {
+            "prayerName": "Sunrise",
+            "adjustments": 3
+          },
+          {
+            "prayerName": "Dhuhr",
+            "adjustments": 2
+          },
+          {
+            "prayerName": "Asr",
+            "adjustments": 3
+          },
+          {
+            "prayerName": "Maghrib",
+            "adjustments": 3
+          },
+          {
+            "prayerName": "Sunset",
+            "adjustments": 0
+          },
+          {
+            "prayerName": "Isha",
+            "adjustments": -2
+          },
+          {
+            "prayerName": "Midnight",
+            "adjustments": 0
+          }
+        ]
+      }
+    },
+    "locationConfig": {
+      "location": {
+        "latitude": 21.3890824,
+        "longtitude": 39.8579118,
+        "city": "Mecca",
+        "countryCode": "SA",
+        "countryName": "Saudi Arabia",
+        "address": "Mecca Saudi Arabia"
+      },
+      "timezone": {
+        "timeZoneId": "Asia/Riyadh",
+        "timeZoneName": "Arabian Standard Time",
+        "dstOffset": 0,
+        "rawOffset": 10800
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+    "apis": {
+        "prayersAPI": {
+            "urls": {
+                "prayersByCityUrl": {
+                    "monthly": "http://api.aladhan.com/v1/calendarByCity",
+                    "daily": "http://api.aladhan.com/v1/timingsByCity/:date_or_timestamp"
+                },
+                "prayersByCoordinatesUrl": {
+                    "monthly": "http://api.aladhan.com/v1/calendar",
+                    "daily": "http://api.aladhan.com/v1/timings/:date_or_timestamp"
+                },
+                "prayerMethodsUrl": {
+                    "methods": "http://api.aladhan.com/v1/methods"
+                }
+            },
+            "schools": [
+                {
+                    "id": 0,
+                    "name": "Sahfi, Hanbali and Maliki"
+                },
+                {
+                    "id": 1,
+                    "name": "Hanafi"
+                }
+            ],
+            "adjustmentMethod": [
+                {
+                    "id": 0,
+                    "name": "Provider"
+                },
+                {
+                    "id": 1,
+                    "name": "Server"
+                },
+                {
+                    "id": 2,
+                    "name": "Client"
+                }
+            ],
+            "latitude": [
+                {
+                    "id": 1,
+                    "latitudeMethod": "Middle of the night"
+                },
+                {
+                    "id": 2,
+                    "latitudeMethod": "One Seventh"
+                },
+                {
+                    "id": 3,
+                    "latitudeMethod": "Angle Based"
+                }
+            ],
+            "midnight": [
+                {
+                    "id": 0,
+                    "name": "Standard (Mid Sunset to Sunrise)"
+                },
+                {
+                    "id": 1,
+                    "name": "Jafari (Mid Sunset to Sunrise)"
+                }
+            ]
+        }
+    }
+}
