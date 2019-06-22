@@ -1,5 +1,6 @@
 import nconf = require('nconf');
-nconf.file('config/default.json');
+nconf.env()
+.file('config/default.json');
 process.env.DEBUG= nconf.get("DEBUG");
 import  {App} from "./routes/main.router";
 import prayersController from "./controllers/prayers.controller";
