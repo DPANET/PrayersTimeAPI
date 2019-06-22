@@ -16,7 +16,7 @@
     "wait": "wait-on http://localhost:3005",
     "parallel": "npm-run-all bundlejs wait",
     "reload": "browser-sync reload --port 3005",
-    "start": "npm run compile && npm run start:server"
+    "publish": "npm run compile && npm run start:server"
   },
   "repository": {
     "type": "git",
