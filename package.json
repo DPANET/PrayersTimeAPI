@@ -5,7 +5,7 @@
   "main": "lib/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "tsc",
+    "build": "tsc",
     "bundlejs": "browserify lib/public/js/settings.js -p [tinyify] > lib/public/js/bundle.js -v --m --im --ignore crypto --ignore google",
     "debug": "browserify src/public/js/settings.ts -p [tsify] > lib/public/js/bundle.js --debug -v --m --im --ignore crypto --ignore google",
     "html:copy": "copyfiles -u 1 src/**.html lib",
@@ -16,7 +16,8 @@
     "wait": "wait-on http://localhost:3005",
     "parallel": "npm-run-all bundlejs wait",
     "reload": "browser-sync reload --port 3005",
-    "publish": "npm run compile && npm run start:server"
+    "compile": "npm run compile && npm run start:server",
+    "start": "node lib/app.js"
   },
   "repository": {
     "type": "git",
