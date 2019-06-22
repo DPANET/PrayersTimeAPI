@@ -11,12 +11,12 @@
     "html:copy": "copyfiles -u 1 src/**.html lib",
     "css:copy": "copyfiles -u 1 src/css/**.css lib/",
     "images:copy": "copyfiles -u 1 src/images/**/* lib/",
-    "start:server": "node --inspect lib/app.js",
+    "start:server": "node lib/app.js",
     "run:parallel": "npm-run-all -p start:server parallel",
     "wait": "wait-on http://localhost:3005",
     "parallel": "npm-run-all bundlejs wait",
     "reload": "browser-sync reload --port 3005",
-    "compile": "npm run compile && npm run start:server",
+    "compile": "npm run build && npm run start:server",
     "start": "node lib/app.js"
   },
   "repository": {
@@ -55,7 +55,6 @@
     "@types/morgan": "^1.7.35",
     "@types/nconf": "^0.10.0",
     "@types/node": "^12.0.8",
-    "@types/ramda": "^0.26.9",
-    "node": "^12.4.0"
+    "@types/ramda": "^0.26.9"
   }
 }
