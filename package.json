@@ -41,7 +41,7 @@
     "helmet": "^3.18.0",
     "moment": "^2.24.0",
     "morgan": "^1.9.1",
-    "nconf": "^0.10.0",
+    "nconf": "^0.11.4",
     "ramda": "^0.26.1"
   },
   "devDependencies": {
